@@ -2,6 +2,10 @@
 % Requirement: voxnet_feature.m, conv3d.m, maxpooling3d.m
 
 clear;close all; clc;
+addpath('polygon2voxel');
+addpath('io');
+addpath('nn');
+addpath('visu');
 
 % load obj and convert it to occupancy grid in 1x30x30x30
 % load('example_input.mat');
@@ -27,4 +31,4 @@ toc;
 % visualize the object
 fprintf('Press any key to visualize the object..\n');
 pause();
-figure, plot3D(squeeze(input)); axis on; grid on;
+figure, plot3D(squeeze(input)), camlight; axis on; grid on;

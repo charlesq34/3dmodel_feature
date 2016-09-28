@@ -1,7 +1,10 @@
 function volume = obj2vox(obj_filename, volume_size, pad_size, visu)
 % OBJ2VOX, convert an obj model to binary volume
 % Input:
-%   obj_filanem: string, obj model file path
+%   obj_filename: string, obj model file path. The OBJ model will be preprocessed
+%       with translation to positive, scaling and offset translation to center
+%       the preprocessing makes the convertion translation-invariant and
+%       scale-invariant to the input OBJ model.
 %   volume_size: integer, final volume size is volume_size+2*pad_size
 %   pad_size: integer
 %   visu: bool, whether to visualize
