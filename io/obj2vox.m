@@ -15,6 +15,10 @@ function volume = obj2vox(obj_filename, volume_size, pad_size, visu)
 % Author: Charles R. Qi
 % Date: Sep 25, 2016
 
+if nargin < 4
+    visu = 0;
+end
+
 FV = obj_loader(obj_filename);
 volume = polygon2voxel(FV, [volume_size, volume_size, volume_size], 'auto', 1, 0);
 volume = padarray(volume, [pad_size, pad_size, pad_size]);
