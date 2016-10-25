@@ -1,0 +1,7 @@
+../data/chair_0001.obj
+../data/chair_0002.obj
+../data/piano_0001.obj
+../data/piano_0002.obj
+../data/piano_0003.obj
+../data/piano_0004.obj
+../data/teapot.obj

@@ -23,7 +23,8 @@ obj_filenames = importdata(obj_filelist);
 for k = 1:length(obj_filenames)
     obj_filename = obj_filenames{k};
     instance = obj2vox(obj_filename, volume_size, pad_size);
-    volume_filename = strcat(obj_filename(1:end-4), '.mat');
+    [~, filename, ~] = fileparts(obj_filename);
+    volume_filename = [filename '.mat'];
     save(fullfile(output_dir, volume_filename), 'instance');
 end
 

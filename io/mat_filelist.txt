@@ -1,0 +1,7 @@
+../data/chair_0001.mat
+../data/chair_0002.mat
+../data/piano_0001.mat
+../data/piano_0002.mat
+../data/piano_0003.mat
+../data/piano_0004.mat
+../data/teapot.mat

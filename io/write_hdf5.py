@@ -48,7 +48,7 @@ def write_tensor_label_hdf5(mat_filelist, volume_size, pad_size):
             save_h5(h5_filename, h5_batch_data[begidx:endidx,:,:,:,:], h5_batch_label[begidx:endidx,:], data_dtype, label_dtype) 
 
 
-write_tensor_label_hdf5('mat_filelist.txt', 24, 3)
+write_tensor_label_hdf5('mat_filelist.txt', 26, 3)
 (d,l) = load_h5(output_filename_prefix+'0.h5')
 print d.shape
 print l.shape
